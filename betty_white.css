@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Braille';
+    src:url('chrome-extension://mnpojhdlckgbapjdfhgpnnaojjkfedhi/fonts/Braille.ttf.woff') format('woff'),
+        url('chrome-extension://mnpojhdlckgbapjdfhgpnnaojjkfedhi/fonts/Braille.ttf.svg#Braille') format('svg'),
+        url('chrome-extension://mnpojhdlckgbapjdfhgpnnaojjkfedhi/fonts/Braille.ttf.eot'),
+        url('chrome-extension://mnpojhdlckgbapjdfhgpnnaojjkfedhi/fonts/Braille.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+*, h1, h2, h3, h4, h5, em, span, html {
+	font-family: 'Braille' !important;
+}
