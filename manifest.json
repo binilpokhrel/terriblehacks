@@ -8,6 +8,7 @@
             "http://*/*",
             "https://*/*"
             ],
+        "js":["torch.js"],
         "css":["betty_white.css"]
         }
     ],
