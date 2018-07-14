@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html style="height: 750px; width: 750px">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src='anime.min.js'></script>
+	</head>
+    <script>
+        function refreshRequest(){
+
+        }
+    </script>
+	<title>T O N E   I T   D O W N</title>
+	<link rel="shortcut icon" href="/images/celestial.png" />
+
+	<body>
+        <div id="particles-js"></div>
+        <script src="particles.min.js"></script>
+        <script src="part.js"></script>
+
+    <div id="header">
+        <h1><a class="title">T O N E   I T   D O W N</a></h1>
+
+        <script>
+            function toggleBraille(checkbox)
+            {
+              if (checkbox.checked){
+                chrome.runtime.sendMessage({
+                  from: 'content',
+                  subject: 'enableBraille'
+                })
+              }
+              else{
+                chrome.runtime.sendMessage({
+                  from: 'content',
+                  subject: 'disableBraille'
+                })
+              }
+            }
+
+            function toggleTorch(checkbox)
+            {
+              if (checkbox.checked){
+                chrome.runtime.sendMessage({
+                  from: 'content',
+                  subject: 'enableTorch'
+                })
+              }
+              else{
+                chrome.runtime.sendMessage({
+                  from: 'content',
+                  subject: 'disableTorch'
+                })
+              }
+            }
+        </script>
+
+        <br>
+
+        <p id="subtitle">- Toggle the features you're too good for -</p>
+
+        <br>
+        <br>
+
+        <label class="switch">
+            <input type="checkbox" onclick="toggleTweeter()">
+            <span class="slider round"></span>
+        </label>
+
+        <a class="button" href="#">Visually unfocused</a>
+
+        <br>
+        <br>
+
+        <label class="switch">
+            <input type="checkbox" onclick="toggleTorch(this)">
+            <span class="slider round"></span>
+        </label>
+
+        <a class="button" href="#">Visually impaired</a>
+
+        <br>
+        <br>
+
+        <label class="switch">
+            <input type="checkbox" onclick="toggleBraille(this)">
+            <span class="slider round"></span>
+        </label>
+
+        <a class="button" href="#">Visually fooked</a>
+
+
+
+
+    </div>
+    <div id="twitterID">
+    </div>
+    <canvas class="fireworks"></canvas>
+    <script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>
